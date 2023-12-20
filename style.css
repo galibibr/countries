@@ -148,3 +148,27 @@
    color: #fff;
 }
 
+/* Right info */
+.right-info {
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 50%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+}
+
+.right-info h1 {
+   font-size: 250px;
+   color: #fff;
+}
+
+.right-info h3 {
+   position: absolute;
+   font-size: 80px;
+   color: #fff;
+   text-shadow: 0 0 10px rgba(0, 0, 0, .5);
+   transform: translateY(150%);
+   margin-left: 13px;
+}
