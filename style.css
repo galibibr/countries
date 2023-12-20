@@ -86,6 +86,12 @@
    height: 100%;
    object-fit: cover;
    pointer-events: none;
+   opacity: 0;
+   transition: .3s ease;
+}
+
+.slide.active img {
+   opacity: 1;
 }
 
 /* Left Info */
