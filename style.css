@@ -101,6 +101,14 @@
    left: 0;
    width: 50%;
    height: 100%;
+   transform: translateX(-100%);
+   transition: 0s;
+}
+
+.slide.active .left-info {
+   transform: translateX(0);
+   z-index: 1;
+   transition: .5s ease;
 }
 
 .left-info .penetrate-blur {
