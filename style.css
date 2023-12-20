@@ -65,6 +65,29 @@
    font-weight: 500;
    margin-left: 30px;
    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   @media (max-width: 1024px) {
+      display: none;
+   }
+}
+
+.navbar .menu {
+   background: transparent;
+   border: none;
+}
+.navbar .menu {
+   @media (min-width: 1025px) {
+      display: none;
+   }
+}
+
+.menu i {
+   color: #fff;
+   font-size: 35px;
+}
+.menu i:hover {
+   cursor: pointer;
+   transform: scale(1.1);
+   transition: 300ms;
 }
 
 /* Banner */
@@ -88,7 +111,7 @@
    object-fit: cover;
    pointer-events: none;
    opacity: 0;
-   transition: .3s ease;
+   transition: 0.3s ease;
 }
 
 .slide.active img {
@@ -109,7 +132,7 @@
 .slide.active .left-info {
    transform: translateX(0);
    z-index: 1;
-   transition: .5s ease;
+   transition: 0.5s ease;
 }
 
 .left-info .penetrate-blur {
@@ -128,7 +151,10 @@
 
 .penetrate-blur h1 {
    font-size: 250px;
-   text-shadow: 0 0 10px rgba(225, 225, 225, .8);
+   text-shadow: 0 0 10px rgba(225, 225, 225, 0.8);
+   @media (max-width: 1024px) {
+      font-size: 150px;
+   }
 }
 
 .left-info .content {
@@ -145,6 +171,8 @@
 .content p {
    font-size: 15px;
    margin: 10px 0 15px;
+   max-height: 75px;
+   overflow-y: hidden;
 }
 
 .content .btn {
@@ -182,7 +210,7 @@
 .slide.active .right-info {
    transform: translateX(0);
    z-index: 1;
-   transition: .5s ease;
+   transition: 0.5s ease;
 }
 
 .right-info h1 {
@@ -193,6 +221,9 @@
       0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
       0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
       0 20px 20px rgba(0, 0, 0, 0.15);
+   @media (max-width: 1024px) {
+      font-size: 150px;
+   }
 }
 
 .right-info h3 {
@@ -202,6 +233,11 @@
    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
    transform: translateY(150%);
    margin-left: 13px;
+   @media (max-width: 1024px) {
+      font-size: 45px;
+      transform: translateY(160%);
+      margin-left: 7.5px;
+   }
 }
 
 /* .Navigation */
