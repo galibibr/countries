@@ -168,7 +168,7 @@
 .left-info .content {
    position: absolute;
    bottom: 8%;
-   left: 10%;
+   left: 12%;
    color: #fff;
 }
 
@@ -270,7 +270,7 @@
 .navigation {
    position: absolute;
    bottom: 8%;
-   right: 5%;
+   right: 6%;
    z-index: 99;
 }
 
